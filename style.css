@@ -917,7 +917,11 @@ nav {
 }
 
 .reviews-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   margin-top: 118px;
+  max-width: 1920px;
 }
 
 .reviews-container-text {
@@ -1076,6 +1080,7 @@ nav {
 
 .footer-content {
   display: flex;
+  justify-content: center;
   gap: 110px;
 }
 
