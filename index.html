@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Vave | Homepage</title>
   </head>
   <body>
@@ -18,8 +19,25 @@
         </a>
         <nav>
           <ul>
-            <li><a href="#hero">WHY WAVE EUROPE</a></li>
-            <li><a href="">SERVICES</a></li>
+            <li>
+              <a class="header-container-nav__active" href="#hero"
+                >WHY WAVE EUROPE</a
+              >
+            </li>
+            <li class="header-container-dropdown">
+              <button class="header-container-nav-dropdown__button">
+                SERVICES
+                <img
+                  src="./assets/icons/dropdown-arrow.svg"
+                  alt="dropdown arrow icon"
+                />
+              </button>
+              <div class="header-container-dropdown-content">
+                <a href="">lorem ipsum</a>
+                <a href="">lorem ipsum</a>
+                <a href="">lorem ipsum</a>
+              </div>
+            </li>
             <li><a href="">REFERENS</a></li>
             <li><a href="">CONTACT</a></li>
             <li>
@@ -102,9 +120,9 @@
             <div class="about-app-container-item__title">Team Setting IT</div>
             <div class="about-app-container-item__description">
               We understand that each business's IT requirements are unique and
-              ever-changing. That's why we offer customized services to help you
-              build an efficient, reliable IT team - a crucial component of
-              business success.
+              ever-changing. That's why we offer
+              <span>customized services</span> to help you build an efficient,
+              reliable IT team - a crucial component of business success.
             </div>
           </div>
           <div class="about-app-container-item">
@@ -114,8 +132,9 @@
             </div>
             <div class="about-app-container-item__description">
               We are a team of highly skilled IT specialists who deliver quality
-              work that exceeds industry standards. We have the expertise and
-              experience necessary to tackle even the most complex projects.
+              work that <span>exceeds industry standards.</span> We have the
+              expertise and experience necessary to tackle even the most complex
+              projects.
             </div>
           </div>
           <div class="about-app-container-item">
@@ -127,14 +146,15 @@
               Together we identify areas for improvement, develop effective
               strategies, and implement solutions that drive growth and
               profitability for your business. Our team is committed to
-              providing you exceptional support at every stage.
+              providing you <span>exceptional support at every stage.</span>
             </div>
           </div>
           <div class="about-app-container-item">
             <img src="./assets/icons/app-4.svg" alt="" />
             <div class="about-app-container-item__title">IT Recruitment</div>
             <div class="about-app-container-item__description">
-              We specialize in staff recruitment, and the top-level candidates
+              We specialize in staff recruitment, and the
+              <span>top-level candidates</span>
               we present are the right fit for the culture and requirements of
               your company. Whether you need temporary support or long-term
               staffing solutions, our team can help.
@@ -146,10 +166,11 @@
               Software Development
             </div>
             <div class="about-app-container-item__description">
-              At our core, we believe that success is built on strong
-              partnerships. That's why we keep communication channels open with
-              our clients every step of the way - from conception to deployment.
-              The result? The best possible solutions for your users.
+              At our core, we believe that success is built on
+              <span>strong partnerships.</span> That's why we keep communication
+              channels open with our clients every step of the way - from
+              conception to deployment. The result? The best possible solutions
+              for your users.
             </div>
           </div>
           <div class="about-app-container-item">
@@ -160,12 +181,393 @@
             <div class="about-app-container-item__description">
               Our team of experts stays up to date with the latest threats and
               technologies to provide top-notch security solutions. With us,
-              your business is protected from all angles - so you have nothing
-              to worry about.
+              your business is <span>protected from all angles</span> - so you
+              have nothing to worry about.
             </div>
+          </div>
+        </div>
+        <div class="about-app-bg"></div>
+      </div>
+    </section>
+    <section class="services">
+      <h3>What we <span class="services-title__color">deliver</span></h3>
+      <div class="services-container">
+        <p class="services-container__title">Why choose us</p>
+        <div class="services-container-cards">
+          <div class="services-container-cards-item">
+            <img src="./assets/icons/layers.svg" alt="layers icon" />
+            <p>Flexible and adaptable approach</p>
+            <span>
+              Our team is constantly learning and expanding their skill set so
+              that we can provide our clients with cutting-edge solutions that
+              deliver results. With our versatile approach, we can quickly
+              respond to changing client demands.
+            </span>
+          </div>
+          <div
+            class="services-container-cards-item services-container-cards-item__active"
+          >
+            <img src="./assets/icons/rocket.svg" alt="rocket icon" />
+            <p>20 years of experience</p>
+            <span>
+              We have over two decades of priceless industry experience behind
+              us - so why not choose us for your next project? Don't wait around
+              - when you want results, put your trust in a team of experts.
+            </span>
+          </div>
+          <div class="services-container-cards-item">
+            <img src="./assets/icons/chart.svg" alt="chart icon" />
+            <p>Speed in action</p>
+            <span>
+              We understand the importance of providing products to clients in a
+              timely fashion. With that in mind, our services go the extra mile
+              by delivering solutions for you at record-breaking speed.
+            </span>
+          </div>
+          <div class="services-container-arrows">
+            <button>
+              <img
+                src="./assets/icons/Icon left arrow.svg"
+                alt="left arrow icon"
+              />
+            </button>
+            <button>
+              <img
+                src="./assets/icons/Icon Right arrow.svg"
+                alt="right arrow icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="services-container-pagination">
+          <div class="services-container-pagination-item">
+            <div class="services-container-pagination-item__active"></div>
+          </div>
+          <div class="services-container-pagination-item"></div>
+          <div class="services-container-pagination-item"></div>
+        </div>
+        <button class="services-container__button">VIEW OUR SERVICES</button>
+      </div>
+    </section>
+    <section class="technology">
+      <h4>Our technology</h4>
+      <div class="technology-container">
+        <div class="technology-container-images">
+          <img
+            class="technology-container-images__diament"
+            src="./assets/icons/diament.svg"
+            alt="diament icon"
+          />
+          <img
+            class="technology-container-images__dots"
+            src="./assets/icons/dots.svg"
+            alt="dots icon"
+          />
+          <img
+            class="technology-container-images__picture"
+            src="./assets/images/technology.png"
+            alt="working people image"
+          />
+          <div class="technology-container-images__years">
+            <p>20</p>
+            <span>Years of experiences</span>
+          </div>
+        </div>
+        <div class="technology-container-content">
+          <div class="technology-container-content-group">
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>C++</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>NET</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>JavaScript</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>Java</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>Android</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>IOS</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>IOS</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>Ruby</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>Rails</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>PHP</p>
+            </div>
+            <div class="technology-container-content-group-item">
+              <img src="./assets/icons/done.svg" alt="" />
+              <p>Delphi</p>
+            </div>
+          </div>
+          <div class="technology-container-content-text">
+            <p class="technology-container-content-text__title">
+              The tech stack behind our solutions
+            </p>
+            <p class="technology-container-content-text__description">
+              At Wave, we pride ourselves on using the latest and most
+              innovative technologies to power our solutions. Our tech stack is
+              carefully crafted to deliver the best possible results for you -
+              our clients. <br />We are highly skilled in a variety of
+              programming languages, frameworks and platforms, including
+              <span
+                >C++, .NET, JavaScript, Java, Android, iOS, Ruby on Rails, PHP,
+                Delphi, and more.</span
+              >
+              All of this allows us to deliver custom-built products that
+              perfectly fit your requirements.
+            </p>
+          </div>
+          <button class="technology-container-content__button">
+            Call now
+            <img src="./assets//icons/arrow right.svg" alt="arrow right icon" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-container-form">
+          <h5>
+            Get to know us<br />
+            better
+          </h5>
+          <form action="">
+            <input
+              placeholder="Enter Your name"
+              type="text"
+              name="name"
+              id="name"
+            />
+            <input
+              placeholder="Enter Your Mail"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <input
+              placeholder="Enter Your Topic"
+              type="text"
+              name="topic"
+              id="topic"
+            />
+            <textarea
+              placeholder="Enter Your Message"
+              name="message"
+              id="message"
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-container-right">
+          <p>
+            Regardless of the size of your project, Wave Europe is here to
+            deliver an IT solution tailored for you. <br /><br />
+            Our staff consists of seasoned industry professionals who can
+            provide accurate feedback and honest assessments to find a perfect
+            fit that meets all of your needs.
+            <br /><br />
+            Got a project that's been burning a hole in your mind? Contact us
+            today to bring it to life with our dev team.
+          </p>
+          <div class="contact-container-right-images">
+            <img
+              src="./assets/icons/dots-square.svg"
+              alt="dots in background"
+            />
+            <img
+              class="contact-container-right-images__border"
+              src="./assets/icons/border.svg"
+              alt="border in background"
+            />
+            <img
+              class="contact-container-right-images__item"
+              src="./assets/images/contact.png"
+              alt="posing mens"
+            />
           </div>
         </div>
       </div>
     </section>
+    <section>
+      <div class="reviews-container">
+        <div class="reviews-container-text">
+          <h6>What our clients are saying about us</h6>
+          <p>Customer satisfaction is a primary goal for our company</p>
+          <img src="./assets/icons/circle.svg" alt="circle icon" />
+        </div>
+        <div class="reviews-container-items">
+          <img
+            class="reviews-container-items__diament"
+            src="./assets/images/diament.png"
+            alt="diament image"
+          />
+          <div class="reviews-container-items-item">
+            <img src="./assets/icons/avatar.svg" alt="avatar" />
+            <div class="reviews-container-items-item__name">Charlie Law</div>
+            <div class="reviews-container-items-item__position">
+              IT Services
+            </div>
+            <div class="reviews-container-items-item__title">Amazing!!</div>
+            <div class="reviews-container-items-item__description">
+              Wave Europe was able to assemble the development team in no time.
+              They maintained a robust, proactive approach throughout the
+              process, which was instrumental in meeting the client's specific
+              requirements. Wave Europe's team was responsive and attentive to
+              the project's needs.
+            </div>
+          </div>
+          <div class="reviews-container-items-item">
+            <img src="./assets/icons/avatar.svg" alt="avatar" />
+            <div class="reviews-container-items-item__name">Charlie Law</div>
+            <div class="reviews-container-items-item__position">
+              IT Services
+            </div>
+            <div class="reviews-container-items-item__title">Amazing!!</div>
+            <div class="reviews-container-items-item__description">
+              Wave Europe was able to assemble the development team in no time.
+              They maintained a robust, proactive approach throughout the
+              process, which was instrumental in meeting the client's specific
+              requirements. Wave Europe's team was responsive and attentive to
+              the project's needs.
+            </div>
+          </div>
+          <div class="reviews-container-items-item">
+            <img src="./assets/icons/avatar.svg" alt="avatar" />
+            <div class="reviews-container-items-item__name">Charlie Law</div>
+            <div class="reviews-container-items-item__position">
+              IT Services
+            </div>
+            <div class="reviews-container-items-item__title">Amazing!!</div>
+            <div class="reviews-container-items-item__description">
+              Wave Europe was able to assemble the development team in no time.
+              They maintained a robust, proactive approach throughout the
+              process, which was instrumental in meeting the client's specific
+              requirements. Wave Europe's team was responsive and attentive to
+              the project's needs.
+            </div>
+          </div>
+          <div class="reviews-container-items-item">
+            <img src="./assets/icons/avatar.svg" alt="avatar" />
+            <div class="reviews-container-items-item__name">Charlie Law</div>
+            <div class="reviews-container-items-item__position">
+              IT Services
+            </div>
+            <div class="reviews-container-items-item__title">Amazing!!</div>
+            <div class="reviews-container-items-item__description">
+              Wave Europe was able to assemble the development team in no time.
+              They maintained a robust, proactive approach throughout the
+              process, which was instrumental in meeting the client's specific
+              requirements. Wave Europe's team was responsive and attentive to
+              the project's needs.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-background">
+        <div class="reviews-background-text">
+          <img src="./assets/icons/star.svg" alt="star icon" />
+          <p>IT Recruitment</p>
+          <img src="./assets/icons/star.svg" alt="star icon" />
+          <p>Software Development</p>
+          <img src="./assets/icons/star.svg" alt="star icon" />
+          <p>Cyber Security</p>
+        </div>
+        <img
+          class="reviews-background__line"
+          src="./assets/images/line.png"
+          alt="line image"
+        />
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <img
+          class="footer-content-logo"
+          src="./assets/images/Logo.png"
+          alt="logo"
+        />
+        <div class="footer-content-nav">
+          <div class="footer-content-nav-list">
+            <p>MENU</p>
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">SERVICE</a></li>
+              <li><a href="">REFERENS</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="footer-content-nav-list">
+            <p>CONTACT</p>
+            <ul>
+              <li><a href="">MAIL</a></li>
+              <li><a href="">TELEFON</a></li>
+              <li><a href="">ADRESS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-content-newsletter">
+          <p class="footer-content-newsletter__title">Newsletter</p>
+          <p class="footer-content-newsletter__description">
+            Subscribe to our newsletter to keep up to date on our marketing,
+            website, design services, and tips.
+          </p>
+          <form>
+            <input
+              placeholder="Enter email"
+              type="email"
+              name="newsletter"
+              id="newsletter"
+            />
+            <button type="submit">SUBMIT</button>
+          </form>
+          <p class="footer-content-newsletter__spam">
+            We hate spam as much as you do. We will never, ever send you such
+            emails.
+          </p>
+        </div>
+      </div>
+      <div class="footer-rights">
+        <div class="footer-rights__divide"></div>
+        <div class="footer-rights-wrapper">
+          <p>
+            © 2023 WAVE . All Rights Reserved. Terms & Conditions. Privacy
+            Policy.
+          </p>
+          <div class="footer-rights-wrapper-media">
+            <a href="">
+              <img src="./assets/icons/facebook.svg" alt="facebook icon" />
+            </a>
+            <a href="">
+              <img src="./assets/icons/twitter.svg" alt="twitter icon" />
+            </a>
+            <a href="">
+              <img src="./assets/icons/linkedin.svg" alt="linkedin icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
