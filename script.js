@@ -16,15 +16,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!isClickInside) {
       Array.from(dropdowns).forEach((dropdown) => {
-        dropdown.style.display = "none";
+        if (dropdown.classList.contains("show")) {
+          dropdown.classList.remove("show");
+          dropdown.classList.add("hide");
+          setTimeout(() => {
+            dropdown.classList.remove("hide");
+            dropdown.style.visibility = "hidden";
+          }, 300);
+        }
       });
     }
   });
 
   if (dropdownButton && dropdownContent) {
     dropdownButton.addEventListener("click", (event) => {
-      dropdownContent.style.display =
-        dropdownContent.style.display === "block" ? "none" : "block";
+      event.stopPropagation();
+      if (dropdownContent.classList.contains("show")) {
+        dropdownContent.classList.remove("show");
+        dropdownContent.classList.add("hide");
+        setTimeout(() => {
+          dropdownContent.classList.remove("hide");
+          dropdownContent.style.visibility = "hidden";
+        }, 300);
+      } else {
+        dropdownContent.classList.remove("hide");
+        dropdownContent.classList.add("show");
+        dropdownContent.style.visibility = "visible";
+      }
     });
   }
 
