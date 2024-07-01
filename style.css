@@ -31,7 +31,6 @@ video,
 canvas,
 svg {
   display: block;
-  /* max-width: 100%; */
 }
 input,
 button,
@@ -47,10 +46,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-#root,
-#__next {
-  isolation: isolate;
 }
 
 header {
@@ -1124,6 +1119,7 @@ nav {
   line-height: 24px;
   letter-spacing: -0.3px;
   text-align: center;
+  cursor: pointer;
 }
 
 .footer-rights {
@@ -1158,4 +1154,12 @@ nav {
 .footer-rights-wrapper-media {
   display: flex;
   gap: 20px;
+}
+
+button:not(.header-container-nav-dropdown__button) {
+  transition: transform 0.3s ease;
+}
+
+button:not(.header-container-nav-dropdown__button):hover {
+  transform: scale(1.1);
 }
