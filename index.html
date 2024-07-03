@@ -18,7 +18,45 @@
           />
         </a>
         <nav>
-          <ul>
+          <ul class="headear-container-ul">
+            <li class="nav-link header-container-nav__active hide">
+              <a href="#hero">WHY WAVE EUROPE</a>
+            </li>
+            <li class="header-container-dropdown nav-link hide">
+              <button class="header-container-nav-dropdown__button">
+                SERVICES
+                <img
+                  src="./assets/icons/dropdown-arrow.svg"
+                  alt="dropdown arrow icon"
+                />
+              </button>
+              <div class="header-container-dropdown-content hide">
+                <a href="">lorem ipsum</a>
+                <a href="">lorem ipsum</a>
+                <a href="">lorem ipsum</a>
+              </div>
+            </li>
+            <li class="nav-link hide"><a href="#referens">REFERENS</a></li>
+            <li class="nav-link hide"><a href="#contact">CONTACT</a></li>
+            <li class="hide">
+              <a href="">
+                PL<img src="./assets/images/poland.png" alt="Poland flag" />
+              </a>
+            </li>
+            <li class="headear-container-nav-menu">
+              <img src="./assets/icons/menu.svg" alt="menu icon" />
+            </li>
+          </ul>
+          <ul class="headear-container-ul-mobile" id="mobile-menu">
+            <li>
+              <a href="#">
+                <img
+                  class="close"
+                  src="./assets/icons/close.svg"
+                  alt="close icon"
+                />
+              </a>
+            </li>
             <li class="nav-link header-container-nav__active">
               <a href="#hero">WHY WAVE EUROPE</a>
             </li>
@@ -38,7 +76,7 @@
             </li>
             <li class="nav-link"><a href="#referens">REFERENS</a></li>
             <li class="nav-link"><a href="#contact">CONTACT</a></li>
-            <li>
+            <li class="">
               <a href="">
                 PL<img src="./assets/images/poland.png" alt="Poland flag" />
               </a>
@@ -74,6 +112,11 @@
         </div>
       </div>
       <div class="hero-image">
+        <img
+          class="hero-image-full"
+          src="./assets/images/hero-full.png"
+          alt="happy people workin"
+        />
         <img src="./assets/images/hero.png" alt="hero picture" />
         <div class="hero-image__bg"></div>
       </div>
@@ -84,12 +127,12 @@
           <img
             class="about-top-images__top"
             src="./assets/images/about-1.png"
-            alt=""
+            alt="happy people workin"
           />
           <img
             class="about-top-images__bottom"
             src="./assets/images/about-2.png"
-            alt=""
+            alt="happy people workin"
           />
           <div class="about-top-images__bg"></div>
         </div>
@@ -250,6 +293,11 @@
     <section class="technology">
       <h4>Our technology</h4>
       <div class="technology-container">
+        <img
+          src="./assets/images/technology-full.png"
+          alt="working people"
+          class="technology-container-imageFull"
+        />
         <div class="technology-container-images">
           <img
             class="technology-container-images__diament"
@@ -389,6 +437,11 @@
             today to bring it to life with our dev team.
           </p>
           <div class="contact-container-right-images">
+            <img
+              src="./assets/images/contact-full.png"
+              alt="posing mens"
+              class="contact-container-right-images-full"
+            />
             <img
               src="./assets/icons/dots-square.svg"
               alt="dots in background"
